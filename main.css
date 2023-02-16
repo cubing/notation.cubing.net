@@ -62,3 +62,14 @@ h2 {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.in-memory {
+  margin: 2em 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.flourish {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
