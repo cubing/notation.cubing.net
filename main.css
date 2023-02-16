@@ -80,7 +80,7 @@ h2 {
 
 .move-display:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(var(--text-color), 0.1);
 }
 
 .in-memory {
