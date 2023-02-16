@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf8">
   <title>Cubing Notation | 3x3x3 Cube</title>
-  <link rel="stylesheet" href="../cubing-icons.css">
+  <link rel="stylesheet" href="https://cdn.cubing.net/css/@cubing/icons">
+  <link rel="stylesheet" href="https://cdn.cubing.net/css/@fontsource/ubuntu">
   <link rel="stylesheet" href="../main.css">
-  <script src="https://cdn.cubing.net/js/cubing/twisty" type="module"></script>
+  <script src="./index.js" type="module"></script>
 </head>
 
 <body>
@@ -15,41 +16,44 @@
     <span>3x3x3 Cube</span>
     <span>Notation</span>
   </div>
+  <hr>
   <section>
     <h2>Basic Moves</h2>
     <p></p>
 
     <div class="move-display-grid">
-      <div class="move-display">
-        <twisty-alg-viewer for="basic-move-U"></twisty-alg-viewer>
-        <twisty-player id="basic-move-U" alg="U" hint-facelets="none" background="none" control-panel="none">
-        </twisty-player>
-      </div>
-      <div class="move-display">
-        <twisty-alg-viewer for="basic-move-L"></twisty-alg-viewer>
-        <twisty-player id="basic-move-L" alg="L" hint-facelets="none" background="none" control-panel="none">
-        </twisty-player>
-      </div>
-      <div class="move-display">
-        <twisty-alg-viewer for="basic-move-F"></twisty-alg-viewer>
-        <twisty-player id="basic-move-F" alg="F" hint-facelets="none" background="none" control-panel="none">
-        </twisty-player>
-      </div>
-      <div class="move-display">
-        <twisty-alg-viewer for="basic-move-R"></twisty-alg-viewer>
-        <twisty-player id="basic-move-R" alg="R" hint-facelets="none" background="none" control-panel="none">
-        </twisty-player>
-      </div>
-      <div class="move-display">
-        <twisty-alg-viewer for="basic-move-B"></twisty-alg-viewer>
-        <twisty-player id="basic-move-B" alg="B" hint-facelets="none" background="none" control-panel="none">
-        </twisty-player>
-      </div>
-      <div class="move-display">
-        <twisty-alg-viewer for="basic-move-D"></twisty-alg-viewer>
-        <twisty-player id="basic-move-D" alg="D" hint-facelets="none" background="none" control-panel="none">
-        </twisty-player>
-      </div>
+      <div class="move-display"><span class="move">U</span> <twisty-player alg="(U .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">L</span> <twisty-player alg="(L .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">F</span> <twisty-player alg="(F .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">R</span> <twisty-player alg="(R .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">B</span> <twisty-player alg="(B .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">D</span> <twisty-player alg="(D .)4"></twisty-player></div>
+    </div>
+  </section>
+  <section>
+    <h2>Double Moves</h2>
+    <p></p>
+
+    <div class="move-display-grid">
+      <div class="move-display"><span class="move">U2</span> <twisty-player alg="(U2 .)2"></twisty-player></div>
+      <div class="move-display"><span class="move">L2</span> <twisty-player alg="(L2 .)2"></twisty-player></div>
+      <div class="move-display"><span class="move">F2</span> <twisty-player alg="(F2 .)2"></twisty-player></div>
+      <div class="move-display"><span class="move">R2</span> <twisty-player alg="(R2 .)2"></twisty-player></div>
+      <div class="move-display"><span class="move">B2</span> <twisty-player alg="(B2 .)2"></twisty-player></div>
+      <div class="move-display"><span class="move">D2</span> <twisty-player alg="(D2 .)2"></twisty-player></div>
+    </div>
+  </section>
+  <section>
+    <h2>Inverse Moves</h2>
+    <p></p>
+
+    <div class="move-display-grid">
+      <div class="move-display"><span class="move">U'</span> <twisty-player alg="(U' .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">L'</span> <twisty-player alg="(L' .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">F'</span> <twisty-player alg="(F' .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">R'</span> <twisty-player alg="(R' .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">B'</span> <twisty-player alg="(B' .)4"></twisty-player></div>
+      <div class="move-display"><span class="move">D'</span> <twisty-player alg="(D' .)4"></twisty-player></div>
     </div>
   </section>
 </body>

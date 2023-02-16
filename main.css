@@ -1,7 +1,8 @@
+@import "https://cdn.cubing.net/css/@fontsource/ubuntu";
+
 body {
   font-family: Ubuntu, Tahoma, sans-serif;
-  display: grid;
-  place-content: center;
+  padding: 2em 0 4em;
 }
 
 .header {
@@ -11,22 +12,34 @@ body {
   font-size: 150%;
 }
 
-.header > * {
+.header .cubing-icon {
+  font-size: 2em;
+}
+
+.header>* {
   display: grid;
   place-content: center;
 }
 
 section {
-  width: min(90%, max(40em, 75%));
+  width: 90vw;
   margin: auto;
 }
 
+h2 {
+  text-align: center;
+}
+
 .move-display-grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 288px);
+  gap: 0.5em;
+  place-content: center;
 }
 
 .move-display {
+  width: 288px;
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(2, 1fr);
@@ -34,12 +47,18 @@ section {
   margin: -1px;
 }
 
-.move-display twisty-alg-viewer {
-  font-size: 500%;
+.move-display .move {
+  font-size: 300%;
   display: grid;
   place-content: center;
 }
+
 .move-display twisty-player {
   height: 10em;
-  width: 12em;
+  width: 10em;
+}
+
+.move-display:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
 }
