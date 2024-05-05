@@ -3,8 +3,9 @@ dev:
 	open http://localhost:8000
 	caddy file-server --listen :8000 --browse
 
-SFTP_PATH = "towns.dreamhost.com:~/notation.cubing.net/"
-URL       = "https://notation.cubing.net/"
+HOSTNAME  = notation.cubing.net
+SFTP_PATH = "${HOSTNAME}:~/${HOSTNAME}/"
+URL       = "https://${HOSTNAME}/"
 
 .PHONY: deploy
 deploy:
