@@ -1,4 +1,4 @@
-import "https://cdn.cubing.net/js/cubing/twisty";
+import "https://cdn.cubing.net/v0/js/cubing/twisty";
 
 for (const moveDisplay of document.querySelectorAll(".move-display")) {
 	const twistyPlayer = moveDisplay.querySelector("twisty-player");
